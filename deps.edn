@@ -1,0 +1,8 @@
+{:deps {camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.3"}
+        org.scicloj/noj                     {:mvn/version "2-beta16"}
+        org.scicloj/tablemath {:mvn/version "1-alpha2"}
+        factual/geo {:mvn/version "3.0.1"}
+        net.clojars.wkok/openai-clojure {:mvn/version "0.22.0"}
+        org.dhatim/fastexcel-reader {:mvn/version "0.18.4"
+                                     :exclusions [org.apache.poi/poi-ooxml]}}
+ :paths ["src" "notebooks"]}
