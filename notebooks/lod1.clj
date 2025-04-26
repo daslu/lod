@@ -120,7 +120,7 @@
 (delay
   (let [data {'center (reverse center)
               'zoom 14
-              'provider "Stadia.AlidadeSmooth"
+              'provider "OpenStreetMap.Mapnik"
               'geojson (->> prepared-geojson
                             (map
                              (fn [feature]
