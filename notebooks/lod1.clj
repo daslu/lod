@@ -63,7 +63,6 @@
 (def ganim
   (-> "data/גנים בלוד הצלבה אמצע עבודה.xlsx"
       tc/dataset
-      
       (tc/rename-columns {"X" :X
                           "Y" :Y})
       (tc/select-columns [:X :Y
@@ -76,7 +75,9 @@
       (tc/head 89)
       (tc/drop-rows #(= (%
                          "שם מוסד")
-                        "תאליה"))))
+                        "תאליה"))
+      (tc/select-rows #(%
+                        "שם מוסד"))))
 
 
 (def raw-geojson
