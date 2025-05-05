@@ -123,7 +123,7 @@
 (delay
   (let [data {'center (reverse center)
               'zoom 14
-              'provider "OpenStreetMap.Mapnik"
+              'provider "Esri.WorldGrayCanvas"
               'geojson (->> prepared-geojson
                             (map
                              (fn [feature]
